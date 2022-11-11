@@ -1,0 +1,47 @@
+
+        #clock {
+            
+            
+            font-size: 5rem;
+            width: 40%;
+            height:10rem;
+            margin: 15rem auto ;
+            
+            text-align: center;
+            border: 0.4rem solid black;
+            border-radius: 20px;
+            box-sizing: border-box;
+            padding-top: 1.5rem;
+            
+        }
+        @media only screen and (min-width:746px) and (max-width:1077px){
+            #clock{
+               font-size: 3.5rem;
+               border-radius: 15px;
+               padding-top : 2.3rem;
+            }   
+           }  
+        @media only screen  and (min-width:452px) and (max-width:746px){
+            #clock{
+               font-size: 2rem;
+               border-radius: 10px;
+               padding-top: 1.8rem;
+               height: 7rem;
+               border-width: 0.3rem;
+               margin: 13rem auto;
+            }   
+           }
+           @media only screen  and (max-width:452px){
+            #clock{
+               font-size: 1.3rem;
+               border-radius: 10px;
+               padding-top: 1.8rem;
+               width:50%;
+               height: 6rem;;
+               padding-left:0.1rem ;
+               padding-right: 0.1rem;
+               border-width: 0.3rem;
+               margin: 210px auto ;
+            }   
+           }
+    
