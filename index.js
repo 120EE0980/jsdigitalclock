@@ -1,4 +1,5 @@
 setInterval(showTime, 1000);
+const sound = new Audio("clocktick.mp3");
         function showTime() {
             let time = new Date();
             let hour = time.getHours();
@@ -16,7 +17,7 @@ setInterval(showTime, 1000);
             }
  
             hour = hour < 10 ? "0" + hour : hour;
-            min = min < 10 ? "0" + min : min;
+            min = min < 10?  "0" + min : min;
             sec = sec < 10 ? "0" + sec : sec;
  
             let currentTime = hour + ":"
@@ -37,13 +38,15 @@ setInterval(showTime, 1000);
                     
                     document.getElementById("clock").style.backgroundColor ="#D4A89F";
 
-                }
-                var sound = new Audio("clocktick.mp3");
-                if (min == 00){
-                    playsound();
-                }
-                function playsound(){
+                }       
+            
+                function Playaudio(){
                     sound.play;
-                }
-            }
-        showTime();
+                 }
+                
+                if (min == 00 && sec == 00){
+                setInterval(Playaudio,3600000);
+                Playaudio();
+              }
+             }
+            showTime();
